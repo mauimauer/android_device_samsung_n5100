@@ -18,8 +18,7 @@ xtalfreq=37400
 nocrc=1
 ag0=0
 aa2g=1
-ccode=XZ
-regrev=11
+ccode=GB
 pa0itssit=0x20
 #PA parameters for 2.4GHz-8/21 TSSI
 pa0b0=0x14B6
