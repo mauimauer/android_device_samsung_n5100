@@ -18,15 +18,15 @@
 # by BoardConfigVendor.mk
 -include device/samsung/smdk4412-common/BoardCommonConfig.mk
 
-LOCAL_PATH := device/samsung/n5110
+LOCAL_PATH := device/samsung/n5100
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
-BOARD_BLUEDROID_VENDOR_CONF := $(LOCAL_PATH)/bluetooth/vnd_n5110.txt
+BOARD_BLUEDROID_VENDOR_CONF := $(LOCAL_PATH)/bluetooth/vnd_n5100.txt
 
 # Inline kernel building
 TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
-TARGET_KERNEL_CONFIG := cyanogenmod_n5110_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_n5100_defconfig
 
 # Camera
 COMMON_GLOBAL_CFLAGS += -DCAMERA_WITH_CITYID_PARAM
@@ -34,11 +34,11 @@ COMMON_GLOBAL_CFLAGS += -DCAMERA_WITH_CITYID_PARAM
 # Charging mode
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charging
 BOARD_BATTERY_DEVICE_NAME := "battery"
-BOARD_CHARGER_RES := device/samsung/n5110/res/charger
+BOARD_CHARGER_RES := device/samsung/n5100/res/charger
 
 # Recovery
 # inherit from the proprietary version
--include vendor/samsung/n5110/BoardConfigVendor.mk
+-include vendor/samsung/n5100/BoardConfigVendor.mk
 
 # assert
-TARGET_OTA_ASSERT_DEVICE := konawifixx,n5110,GT-N5110,konawifi
+TARGET_OTA_ASSERT_DEVICE := kona3gxx,n5100,GT-N5100,kona3g

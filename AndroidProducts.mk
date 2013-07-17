@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_n5110.mk
+    $(LOCAL_DIR)/full_n5100.mk

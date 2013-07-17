@@ -18,6 +18,6 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME   "Galaxy Note 8.0"
+#define BTM_DEF_LOCAL_NAME   "GT-N5100"
 
 #endif

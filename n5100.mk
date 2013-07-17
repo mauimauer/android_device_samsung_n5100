@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/n5110
+LOCAL_PATH := device/samsung/n5100
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
@@ -67,4 +67,4 @@ $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-he
 
 $(call inherit-product, device/samsung/smdk4412-common/common.mk)
 
-$(call inherit-product-if-exists, vendor/samsung/n5110/n5110-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/n5100/n5100-vendor.mk)

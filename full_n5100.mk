@@ -25,11 +25,11 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 # This is where we'd set a backup provider if we had one
 #$(call inherit-product, device/sample/products/backup_overlay.mk)
-$(call inherit-product, device/samsung/n5110/n5110.mk)
+$(call inherit-product, device/samsung/n5100/n5100.mk)
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := full_n5110
-PRODUCT_DEVICE := n5110
+PRODUCT_NAME := full_n5100
+PRODUCT_DEVICE := n5100
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := GT-N5110
+PRODUCT_MODEL := GT-N5100
