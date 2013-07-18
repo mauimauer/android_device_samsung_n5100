@@ -486,7 +486,7 @@ on property:ro.uart_debug=0
 service at_distributor /system/bin/at_distributor
     class main
     user root
-    group radio lo
+    group radio log
 
 # create virtual SD card at /mnt/sdcard, based on the /data/media directory
 # daemon will drop to user/group system/media_rw after initializing
@@ -561,6 +561,12 @@ service macloader /system/bin/macloader
     class main
     oneshot
     
+# cbd
+service cpboot-daemon /sbin/cbd -d
+    class main
+    user root
+    group radio cache inet misc audio sdcard_rw log sdcard_r
+
 service orientationd /system/bin/orientationd
     class main
     user compass
