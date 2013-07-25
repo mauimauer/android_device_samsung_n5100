@@ -22,7 +22,7 @@ LOCAL_PATH := device/samsung/n5100
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
-BOARD_BLUEDROID_VENDOR_CONF := $(LOCAL_PATH)/bluetooth/vnd_n5100.txt
+BOARD_BLUEDROID_VENDOR_CONF := device/samsung/n5100/bluetooth/vnd_n5100.txt
 
 # Inline kernel building
 TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
@@ -37,6 +37,9 @@ COMMON_GLOBAL_CFLAGS += -DCAMERA_WITH_CITYID_PARAM
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charging
 BOARD_BATTERY_DEVICE_NAME := "battery"
 BOARD_CHARGER_RES := device/samsung/n5100/res/charger
+
+# Sensors
+BOARD_USE_LEGACY_SENSORS_FUSION = false
 
 # RIL
 BOARD_PROVIDES_LIBRIL := true

@@ -31,22 +31,23 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/ueventd.smdk4x12.rc:root/ueventd.smdk4x12.rc \
     $(LOCAL_PATH)/rootdir/ueventd.smdk4x12.rc:recovery/root/ueventd.smdk4x12.rc \
     $(LOCAL_PATH)/rootdir/lpm.rc:root/lpm.rc \
-	$(LOCAL_PATH)/rootdir/init.bt.rc:root/init.bt.rc \
     $(LOCAL_PATH)/rootdir/fstab.smdk4x12:root/fstab.smdk4x12
 
 # Packages
 PRODUCT_PACKAGES += \
     tiny_hw \
     libsecril-client \
+	libsecril-client-sap \
     DeviceSettings \
     SamsungServiceMode
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps.xml:system/etc/gps.xml \
-    $(LOCAL_PATH)/configs/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
+	$(LOCAL_PATH)/configs/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
     $(LOCAL_PATH)/configs/nvram_mfg.txt_murata:system/etc/wifi/nvram_mfg.txt_murata \
     $(LOCAL_PATH)/configs/nvram_net.txt:system/etc/wifi/nvram_net.txt \
     $(LOCAL_PATH)/configs/nvram_net.txt_murata:system/etc/wifi/nvram_net.txt_murata
+
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -54,9 +55,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     mobiledata.interfaces=pdp0,wlan0,gprs,ppp0 \
     ro.ril.hsxpa=1 \
     ro.ril.gprsclass=10
-
-PRODUCT_PACKAGES += \
-	libsecril-client-sap
 
 # Charger
 PRODUCT_PACKAGES += \
