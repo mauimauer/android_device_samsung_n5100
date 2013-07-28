@@ -40,7 +40,7 @@ BOARD_CHARGER_RES := device/samsung/n5100/res/charger
 
 # Sensors
 BOARD_USE_LEGACY_SENSORS_FUSION = false
-
+		
 # RIL
 BOARD_PROVIDES_LIBRIL := true
 BOARD_MODEM_TYPE := xmm6262
